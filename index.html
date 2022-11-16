@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/main.css" />
+		<title>Avengers: Endgame</title>
+	</head>
+	<body>
+		<main>
+			<div class="bg-image">
+				<img src="/images/bg.jpg" alt="bg-image" />
+				<div class="overlay"></div>
+			</div>
+			<div class="info">
+				<h1>Avengers: Endgame</h1>
+				<div class="genres">
+					<button class="genre">ADVENTURE</button>
+					<button class="genre">ACTION</button>
+					<button class="genre">FANTASY</button>
+				</div>
+				<div class="movie-info">
+					<p>English</p>
+					<p><span></span> April 26, 2019</p>
+					<p><span></span> 2h 40m</p>
+				</div>
+				<div class="movie-desc">
+					After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must
+					reunite and assemble again to reinvigorate their trounced allies and restore balance.
+				</div>
+				<div class="like">
+					<div class="img">
+						<img src="/images/heart.svg" alt="heart" />
+					</div>
+					<div class="number">
+						<span>99%</span>
+						<p>want to see</p>
+					</div>
+				</div>
+				<div class="watch">
+					<button class="play" onclick="myFunction()">
+						<p>Watch trailer</p>
+						<img src="/images/play.svg" alt="play" />
+					</button>
+					<button class="play">
+						<a href="https://ok.ru/video/1278204316359" target="_blank">Watch movie</a>
+						<img src="/images/arrow.svg" alt="play" />
+					</button>
+				</div>
+			</div>
+		</main>
+		<div class="video" id="video">
+			<iframe
+				src="https://www.youtube.com/embed/TcMBFSGVi1c"
+				title="Marvel Studios' Avengers: Endgame - Official Trailer"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+			<div class="close" onclick="myFunction()">
+				<img src="/images/close.svg" alt="close" />
+			</div>
+		</div>
+		<script>
+			function myFunction() {
+				var x = document.getElementById("video");
+				if (x.style.display === "none") {
+					x.style.display = "flex";
+				} else {
+					x.style.display = "none";
+				}
+			}
+		</script>
+	</body>
+</html>
